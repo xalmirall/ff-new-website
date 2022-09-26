@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Special+Elite&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --p600: #FD6A12;
+  --p800: #C94C02;
+  --s200: #EFE8D4;
+  --g700: #32322D;
+}
+
+a:hover {
+  color: var(--p600);
+}
+
+h1{
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+}
+
+p{
+  font-family: 'Special Elite', cursive;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+body{
+  background-color: var(--s200);
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+  max-width: 1440px;
+  margin: 0px auto;
+  gap: 217px;
+  background: var(--s200);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 66px;
+  width: 677px;
+  height: 42px;
+}
+
+li a{
+  display: block;
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  font-size: 1.75rem;
+  color: var(--g700);
+  font-weight: 700;
+  transition: 300ms;
+}
+
+.logo img{
+    width: 434px;
+    height: 64.28px;
+}
+
+.cover{
+  margin: 0px auto;
+  max-width: 1440px;
+  margin-bottom: 96px;
+}
+
+.cover img{
+    width: 100%;
+}
+
+.tour{
+    max-width: 678px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.bio-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 128px 0px 96px;
+  gap: 162px;
+
+  margin: 0px auto;
+  max-width: 1170px;
+  height: 683px;
+}
+
+.bio-image img{
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  max-width: 562px;
+}
+
+.bio-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  width: 446px;
+  height: 380px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  height: 48px;
+  border: none;
+  font-family: 'Special Elite', cursive;
+  font-size: 1rem;
+  background: var(--p800);
+  color: var(--s200);
+  transition: 300ms;
+}
+
+.btn:hover{
+  background: var(--p600);
+  color: var(--g700);
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  
+  width: 100%;
+  height: 256px;
+  left: 0px;
+  bottom: 0px;
+  background-color: var(--g700);
+  color: var(--s200);
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 76px;
+
+  width: 385px;
+  height: 40px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.social-media img{
+  width: 40px;
+}
+
+a img:hover {
+  border: 1px solid red;
+  color: var(--p600);
+}
+
+/*TABLET*/
+
+@media (max-width: 1320px) {
+  .navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 32px 16px;
+    max-width: 1440px;
+    gap: 32px;
+
+    box-sizing: border-box;
+    border-bottom: 1px solid #32322D;
+  }
+
+  .logo img{
+    width: 600px;
+    height: 88.86px;
+  }
+
+  .bio-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 0px;
+    gap: 96px;
+    
+    width: 634px;
+    height: 1156px;
+    left: 195px;
+    top: 779px;
+  }
+
+  .bio-image img{
+    max-width: 634px;
+  }
+  
+  .bio-text{
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+  
+    width: 634px;
+    height: 356px;
+  }
+}
+
+/*MOBILE*/
+
+@media (max-width: 734px) {
+
+  .navbar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px 10px;
+    gap: 25px;
+    
+    margin: 0px auto;
+    max-width: 390px;
+    height: 174.28px;
+
+
+    background:  var(--s200);
+    border-bottom: 1px solid var(--g700);
+  }
+
+  .logo img{
+    width: 326px;
+    height: 48.28px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 28px;
+
+    width: 358px;
+    height: 27px;
+  }
+
+  li a{
+    font-size: 1.125rem;
+  }
+
+  .bio-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 40px;
+
+    width: 327px;
+    height: 710px;
+  }
+  
+  .bio-image img{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 327px;
+  }
+  
+  .bio-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 326px;
+    height: 354px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+
+
+
+}

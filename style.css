@@ -176,11 +176,6 @@ li a{
   width: 40px;
 }
 
-a img:hover {
-  border: 1px solid red;
-  color: var(--p600);
-}
-
 /*TABLET*/
 
 @media (max-width: 1320px) {
@@ -272,6 +267,10 @@ a img:hover {
     font-size: 1.125rem;
   }
 
+  .tour h1{
+    font-size: 24px;
+  }
+
   .bio-wrapper{
     display: flex;
     flex-direction: column;
@@ -299,6 +298,9 @@ a img:hover {
     padding: 0px;
     gap: 16px;
 
+    font-size: 14px;
+    
+
     width: 326px;
     height: 354px;
 
@@ -307,7 +309,23 @@ a img:hover {
     flex-grow: 0;
   }
 
+  .bio-text h1{
+    font-size: 24px;
+  }
 
+  .footer {
+    margin-top: 40px;
+  }
+
+  .footer p{
+    width: 240px;
+    text-align: center;
+  }
+
+  .footer .social-media{
+    gap: 26.67px;
+    width: 240px;
+  }
 
 
 }

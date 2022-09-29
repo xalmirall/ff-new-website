@@ -113,10 +113,13 @@ li a{
   gap: 40px;
   width: 446px;
   min-height: 380px;
-
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.bio-text a{
+  text-decoration: none;
 }
 
 .btn{

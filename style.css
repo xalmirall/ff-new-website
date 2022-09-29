@@ -244,6 +244,10 @@ li a{
     font-size: 1.125rem;
   }
 
+  .cover{
+    margin-bottom: 40px;
+  }
+
   .tour h1{
     font-size: 24px;
   }

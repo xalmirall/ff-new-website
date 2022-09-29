@@ -145,7 +145,7 @@ li a{
   align-items: center;
   padding: 0px;
   gap: 24px;
-  
+  text-align: center;
   width: 100%;
   min-height: 256px;
   left: 0px;
@@ -301,7 +301,6 @@ li a{
 
   .footer p{
     width: 240px;
-    text-align: center;
   }
 
   .footer .social-media{

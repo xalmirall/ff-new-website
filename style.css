@@ -19,12 +19,13 @@ a:hover {
 h1{
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
+  line-height: 3.75rem;
 }
 
 p{
   font-family: 'Special Elite', cursive;
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 body{
@@ -93,7 +94,6 @@ li a{
   align-items: center;
   padding: 128px 0px 96px;
   gap: 162px;
-
   margin: 0px auto;
   max-width: 1170px;
 }
@@ -111,7 +111,6 @@ li a{
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-
   width: 446px;
   min-height: 380px;
 
@@ -185,9 +184,6 @@ li a{
     padding: 40px 32px 16px;
     max-width: 1440px;
     gap: 32px;
-
-    box-sizing: border-box;
-    border-bottom: 1px solid #32322D;
   }
 
   .logo img{
@@ -196,17 +192,10 @@ li a{
   }
 
   .bio-wrapper{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 96px 0px;
     gap: 96px;
-    
-    width: 634px;
-    height: 1156px;
-    left: 195px;
-    top: 779px;
+    min-width: 634px;
   }
 
   .bio-image img{
@@ -216,9 +205,6 @@ li a{
   .bio-text{
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 40px;
-  
     width: 634px;
     min-height: 356px;
   }
@@ -229,8 +215,6 @@ li a{
 @media (max-width: 734px) {
 
   .navbar{
-    box-sizing: border-box;
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 24px 16px 10px;
@@ -240,9 +224,7 @@ li a{
     max-width: 390px;
     height: 134.28px;
 
-
     background:  var(--s200);
-    border-bottom: 1px solid var(--g700);
   }
 
   .logo img{
@@ -251,13 +233,9 @@ li a{
   }
 
   ul {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
     padding: 0px;
     gap: 28px;
-
     width: 358px;
     height: 27px;
   }
@@ -271,15 +249,10 @@ li a{
   }
 
   .bio-wrapper{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 24px 0px;
     gap: 40px;
-
-    width: 327px;
-    height: 710px;
+    min-width: 327px;
   }
   
   .bio-image img{

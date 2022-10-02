@@ -48,6 +48,10 @@ p{
   line-height: 1.5rem;
 }
 
+.m-space{
+  height: 40px;
+}
+
 body{
   background-color: var(--s200);
 }
@@ -304,12 +308,6 @@ li a{
 
 
   }
-
-
-
-
-
-
 }
 
 /*MOBILE*/
@@ -401,6 +399,7 @@ li a{
     flex-direction: column;
     align-items: center;
     padding: 0px;
+    margin: 40px auto;
     gap: 24px;
     width: 326px;
   }

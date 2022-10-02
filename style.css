@@ -9,7 +9,13 @@
   --p600: #FD6A12;
   --p800: #C94C02;
   --s200: #EFE8D4;
+  --g200: #8B8B7E;
   --g700: #32322D;
+}
+
+a{
+  text-decoration: none;
+  color: var(--p800);
 }
 
 a:hover {
@@ -20,6 +26,20 @@ h1{
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
   line-height: 3.75rem;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h6 {
+  font-family: 'Merriweather';
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+  color: var(--g200);
 }
 
 p{
@@ -141,6 +161,56 @@ li a{
   color: var(--g700);
 }
 
+/*DISCOGRAFIA START*/
+
+.album-info-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 63px;
+  margin: 96px auto;
+
+  max-width: 909px;
+}
+
+.album-info-wrapper .album-cover{
+  width: 400px;
+}
+
+.album-info-wrapper .album-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 430px;
+  height: 400px;
+}
+
+.album-info .title-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 450px;
+  height: 75px;
+}
+
+.album-info .streaming{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 168px;
+  height: 40px;
+}
+
+/*DISCOGRAFÍA END*/
+
 .footer{
   display: flex;
   flex-direction: column;
@@ -177,6 +247,7 @@ li a{
   width: 40px;
 }
 
+/*RESPONSIVE*/
 /*TABLET*/
 
 @media (max-width: 1320px) {
@@ -211,6 +282,34 @@ li a{
     width: 634px;
     min-height: 356px;
   }
+
+  .album-info-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 400px;
+
+  }
+
+  .album-info-wrapper .album-cover {
+    width: 400px;
+  }
+
+  .album-info-wrapper .album-info {
+    justify-content: start;
+    align-items: flex-start;
+    width: 400px;
+
+
+  }
+
+
+
+
+
+
 }
 
 /*MOBILE*/
@@ -294,6 +393,29 @@ li a{
   }
 
   .bio-text h1{
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .album-info-wrapper{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 326px;
+  }
+
+  .album-info-wrapper .album-cover {
+    width: 326px;
+  }
+
+  .album-info-wrapper .album-info {
+    justify-content: start;
+    align-items: flex-start;
+    width: 326px;
+  }
+
+  .album-info h2 {
     font-size: 24px;
     line-height: 36px;
   }

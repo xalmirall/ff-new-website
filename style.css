@@ -425,6 +425,7 @@ li a{
     flex-direction: column;
     align-items: flex-start;
     width: 326px;
+    height: fit-content;
   }
 
   .footer {

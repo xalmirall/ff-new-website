@@ -315,6 +315,11 @@ li a{
 
 @media (max-width: 734px) {
 
+  body h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
   .navbar{
     flex-direction: column;
     align-items: center;
@@ -347,11 +352,6 @@ li a{
 
   .cover{
     margin-bottom: 40px;
-  }
-
-  .tour h1{
-    font-size: 24px;
-    margin: 0px;
   }
 
   .bio-wrapper{
@@ -391,11 +391,6 @@ li a{
     margin-top: 12px;
   }
 
-  .bio-text h1{
-    font-size: 24px;
-    line-height: 36px;
-  }
-
   .album-info-wrapper{
     flex-direction: column;
     align-items: center;
@@ -416,7 +411,7 @@ li a{
   }
 
   .album-info h2 {
-    font-size: 23px;
+    font-size: 22px;
     line-height: 36px;
   }
 
